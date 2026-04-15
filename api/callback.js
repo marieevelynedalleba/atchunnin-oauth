@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   }
 
   if (!clientId || !clientSecret) {
-    return res.status(500).send("Missiang GitHub OAuth environment variables");
+    return res.status(500).send("Missing GitHub OAuth environment variables");
   }
 
   try {
