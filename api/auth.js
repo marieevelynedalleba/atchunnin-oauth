@@ -5,7 +5,6 @@ export default function handler(req, res) {
   if (!clientId) {
     return res.status(500).send("Missing GITHUB_CLIENT_ID");
   }
-
   const state = Math.random().toString(36).substring(2);
   const scope = "repo";
 
